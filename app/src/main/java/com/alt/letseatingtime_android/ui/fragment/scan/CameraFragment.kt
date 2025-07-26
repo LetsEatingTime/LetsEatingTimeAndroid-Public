@@ -116,7 +116,6 @@ class CameraFragment : Fragment() {
                     viewModel.setUri(savedUri)
                     val msg = "사진이 저장되었습니다: $savedUri"
                     findNavController().navigate(R.id.action_cameraFragment_to_imageResultFragment)
-                    Log.d("CameraFragment", msg)
                 }
             }
         )

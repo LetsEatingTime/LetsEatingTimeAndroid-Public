@@ -26,7 +26,6 @@ class StoreGoods1Adapter(private val itemList : List<OrderListResponse>, private
                 binding.root.setOnClickListener {
                     onClick(position)
                 }
-                Log.d("StoreGoods1Adapter", "url : $imageUrl")
             }
         }
 
@@ -39,7 +38,6 @@ class StoreGoods1Adapter(private val itemList : List<OrderListResponse>, private
     override fun getItemCount(): Int = itemList.size
 
     override fun onBindViewHolder(holder: StoreType1ViewHolder, position: Int) {
-        Log.d("StoreGoods1Adapter", "url : $imageList")
         holder.bindDate(itemData =  itemList[position], position =  position, imageUrl =  imageList[itemList[position].idx]?.fileName ?: "")
     }
 }

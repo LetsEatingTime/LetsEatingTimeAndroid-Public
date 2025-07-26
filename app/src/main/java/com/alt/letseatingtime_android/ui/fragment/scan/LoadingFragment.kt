@@ -50,8 +50,6 @@ class LoadingFragment : Fragment() {
                 }
                 scan.await()
             }
-            Log.d("test", "run1")
-
         }
 
 

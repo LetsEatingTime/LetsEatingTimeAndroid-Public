@@ -54,7 +54,6 @@ class ScanViewModel(application: Application) : AndroidViewModel(application) {
                     call: Call<ScanResponse>,
                     response: Response<ScanResponse>
                 ) {
-                    Log.d("ScanResult", "result : ${response.body()}")
                     onAction()
                 }
 

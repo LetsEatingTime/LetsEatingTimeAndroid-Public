@@ -37,19 +37,6 @@ class ScanFragment : Fragment() {
         }
         binding.btnScan.setOnClickListener {
             checkingPermission()
-//            if((requireContext().checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) && (requireContext().checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) ){
-//                requireContext().shortToast("접근 권한이 허용되지 않아 카메라를 실행할 수 없습니다. 설정에서 접근 권한을 허용해주세요.")
-//                Log.d("camera", "not in check")
-//            }
-//            else{
-//                ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE), CAMERA_PERMISSION_CODE)
-//                findNavController().navigate(R.id.action_scanFragment_to_cameraFragment)
-//                Log.d("camera", "in check")
-//                requireActivity().requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-//                (requireActivity() as BottomController).setBottomNavVisibility(false)
-//
-//            }
-
         }
         return binding.root
     }

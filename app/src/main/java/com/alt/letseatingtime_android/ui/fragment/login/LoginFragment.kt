@@ -76,11 +76,9 @@ class LoginFragment : Fragment() {
         binding.btnLoginSubmit.setOnClickListener(OnSingleClickListener {
             val id = binding.etId.text.toString()
             val pw = binding.etPw.text.toString()
-            Log.d("test", "id : $id \n pw : $pw")
             if (id != "" && pw != "") {
                 loginBtnAnim(true)
                 binding.loginErrorMessage.text = ""
-                Log.d("test", "id : $id \n pw : $pw")
                 login(id = id, pw = pw)
                 binding.loginErrorMessage.visibility = View.GONE
             } else {

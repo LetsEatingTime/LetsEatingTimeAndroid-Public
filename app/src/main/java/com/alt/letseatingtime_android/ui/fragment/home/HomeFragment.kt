@@ -114,10 +114,6 @@ class HomeFragment : Fragment() {
 
         val time = (LocalDateTime.now().hour * 60) + LocalDateTime.now().minute
 
-        Log.d(
-            "test",
-            "h : ${LocalDateTime.now().hour},\nm : ${LocalDateTime.now().minute},\ns : ${LocalDateTime.now().second},\ntime : $time"
-        )
         var day: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"))
         var position = 0
         when (time) {
@@ -153,7 +149,6 @@ class HomeFragment : Fragment() {
     // TODO : 시간받고, position에 값 넣기
     fun setMeal(data: MealResponse, position: Int) {
         val mealList = mutableListOf<String>()
-        Log.d("Meal", "data : $data")
         if (data.data.exists) {
             mealList.add(data.data.breakfast?.menu?.joinToString(", ", "", "") ?: "")
             mealList.add(data.data.lunch?.menu?.joinToString(", ", "", "") ?: "")
@@ -188,7 +183,6 @@ class HomeFragment : Fragment() {
                 ) {
                     val result = response.body()
                     if (response.isSuccessful) {
-                        Log.d(requireActivity().packageName, "내용 : ${result}")
                         if (result != null) {
                             setMeal(result, position)
                         }

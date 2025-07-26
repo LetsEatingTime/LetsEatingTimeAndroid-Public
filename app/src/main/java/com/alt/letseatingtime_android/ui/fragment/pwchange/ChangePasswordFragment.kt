@@ -67,7 +67,6 @@ class ChangePasswordFragment : Fragment() {
             override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
                 if (response.isSuccessful) {
                     findNavController().navigate(R.id.action_changePasswordFragment_to_loginFragment)
-                    Log.d("상태",pwChangeRequest.toString())
                     Toast.makeText(context, "성공적으로 변경이 완료되었습니다.", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(context, "회원가입 실패 다시 시도해주세요", Toast.LENGTH_SHORT).show()

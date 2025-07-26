@@ -57,7 +57,6 @@ class SignupFragment4 : Fragment() {
                         )
                     } else {
                         Toast.makeText(activity, "다시 확인해주세요", Toast.LENGTH_SHORT).show()
-                        Log.d("상태", "${grade}학년 ${classname}반 ${classNo}번 ")
                     }
                 } else {
                     Toast.makeText(activity, "모두 입력해주세요", Toast.LENGTH_SHORT).show()
@@ -89,7 +88,6 @@ class SignupFragment4 : Fragment() {
                         }
                         it.finish()
                     }
-                    Log.d("상태",signupRequest.toString())
                     Toast.makeText(context, "회원가입 대기", Toast.LENGTH_SHORT).show()
                 } else {
                     requireActivity().let {

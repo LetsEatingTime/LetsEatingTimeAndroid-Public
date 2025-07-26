@@ -76,9 +76,6 @@ class UserActivityViewModel : ViewModel() {
                 call: Call<BaseResponse<String>>,
                 response: Response<BaseResponse<String>>
             ) {
-                Log.d("viewModel", "response : $response")
-                Log.d("viewModel", "data : $userInfo")
-                Log.d("viewModel", "response : ${MyApplication.prefs.accessToken}")
                 if (response.isSuccessful){
                     if (response.code() == 200){
                         _isSuccessChange.value = true
