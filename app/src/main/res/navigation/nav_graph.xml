@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/goodsBuyFragment2"
+        android:name="com.alt.letseatingtime_android.ui.fragment.store.GoodsBuyFragment"
+        android:label="fragment_goods_buy"
+        tools:layout="@layout/fragment_goods_buy" >
+        <action
+            android:id="@+id/action_goodsBuyFragment2_to_storeFragment2"
+            app:destination="@id/storeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.alt.letseatingtime_android.ui.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_mealListFragment"
+            app:destination="@id/mealListFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_scanFragment"
+            app:destination="@id/scanFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_goodsBuyFragment2"
+            app:destination="@id/goodsBuyFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.alt.letseatingtime_android.ui.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_profileModifyFragment2"
+            app:destination="@id/profileModifyFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileModifyFragment2"
+        android:name="com.alt.letseatingtime_android.ui.fragment.profile.ProfileModifyFragment"
+        android:label="fragment_profile_modify"
+        tools:layout="@layout/fragment_profile_modify" >
+        <action
+            android:id="@+id/action_profileModifyFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/storeFragment2"
+        android:name="com.alt.letseatingtime_android.ui.fragment.store.StoreFragment"
+        android:label="fragment_store"
+        tools:layout="@layout/fragment_store" >
+        <action
+            android:id="@+id/action_storeFragment2_to_goodsBuyFragment2"
+            app:destination="@id/goodsBuyFragment2" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.alt.letseatingtime_android.ui.activity.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.alt.letseatingtime_android.ui.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/mealListFragment"
+        android:name="com.alt.letseatingtime_android.ui.fragment.meal.MealListFragment"
+        android:label="MealListFragment" >
+        <action
+            android:id="@+id/action_mealListFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanFragment"
+        android:name="com.alt.letseatingtime_android.ui.fragment.scan.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_scanFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_scanFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.alt.letseatingtime_android.ui.fragment.scan.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_scanFragment"
+            app:destination="@id/scanFragment" />
+        <action
+            android:id="@+id/action_cameraFragment_to_imageResultFragment"
+            app:destination="@id/imageResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageResultFragment"
+        android:name="com.alt.letseatingtime.ImageResultFragment"
+        android:label="fragment_image_result"
+        tools:layout="@layout/fragment_image_result" >
+        <action
+            android:id="@+id/action_imageResultFragment_to_homeFragment2"
+            app:destination="@id/homeFragment2" />
+        <action
+            android:id="@+id/action_imageResultFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+    </fragment>
+</navigation>

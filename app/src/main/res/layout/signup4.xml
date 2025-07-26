@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/signup_fragment_4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_eating_food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/img_eating_food"
+        app:layout_constraintBottom_toTopOf="@id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_grade"
+        style="@style/tv_signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardsemibold"
+        android:text="학년"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintStart_toStartOf="@id/et_grade"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_grade"
+        style="@style/et_login"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:hint="학년을 입력해주세요. ex:2"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/pretendardregular"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_grade" />
+
+
+    <TextView
+        android:id="@+id/tv_class"
+        style="@style/tv_signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardsemibold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="3dp"
+        android:text="반"
+        app:layout_constraintStart_toStartOf="@id/et_class"
+        app:layout_constraintTop_toBottomOf="@id/et_grade" />
+
+    <EditText
+        android:id="@+id/et_class"
+        style="@style/et_login"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/pretendardregular"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="27dp"
+        android:hint="본인의 반을 입력해주세요. ex:4"
+        android:inputType="number"
+        android:maxLength="1"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_class" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        style="@style/tv_signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardsemibold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="3dp"
+        android:text="번호"
+        app:layout_constraintStart_toStartOf="@id/et_class"
+        app:layout_constraintTop_toBottomOf="@id/et_class" />
+
+    <EditText
+        android:id="@+id/et_number"
+        style="@style/et_login"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/pretendardregular"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="27dp"
+        android:hint="번호를 입력해주세요. ex:12"
+        android:inputType="number"
+        android:maxLength="2"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="@id/et_number"
+        app:layout_constraintTop_toBottomOf="@id/tv_number" />
+
+
+
+
+
+
+    <TextView
+        style="@style/tv_signup_pb_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardmedium"
+        android:text="4/4"
+        app:layout_constraintBottom_toTopOf="@id/pb_signup"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_signup"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="370dp"
+        android:layout_height="10.4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pb_signup_background"
+        android:max="100"
+        android:paddingHorizontal="4.6dp"
+        android:paddingVertical="3.4dp"
+        android:progress="100"
+        android:progressDrawable="@drawable/pb_signup_progress_bar"
+        app:layout_constraintBottom_toTopOf="@id/btn_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        style="@style/btn_signup_submit"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/pretendardmedium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_to_login"
+        style="@style/tv_to_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendardbold"
+        app:layout_constraintTop_toBottomOf="@id/btn_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
