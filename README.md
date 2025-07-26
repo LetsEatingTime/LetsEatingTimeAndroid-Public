@@ -11,8 +11,8 @@ Gemeni와 자체 개발한 AI를 활용해 급식 잔반량을 분석하고, 결
 > 3. 지급받은 포인트를 활용하여 영양사 선생님께서 등록한 상품들을 구매할 수 있어요.
 
 ## App Image
-<img src="https://github.com/user-attachments/assets/7fe5a480-4cc7-4aeb-b01d-c1bf0ea9d53f"  width="19.5%" alt=""/>
-<img src="https://github.com/user-attachments/assets/e11526ff-d18c-4c1f-bf7d-d0f13e413c8a"  width="19.5%" alt=""/>
-<img src="https://github.com/user-attachments/assets/3b7ce464-6140-46d9-9e12-625b5db46173"  width="19.5%" alt=""/>
-<img src="https://github.com/user-attachments/assets/ae015293-3a4a-43df-bacc-75b15149c49b"  width="19.5%" alt=""/>
-<img src="https://github.com/user-attachments/assets/dba0a697-5f07-416e-90de-8fb35746267a"  width="19.5%" alt=""/>
+<img width="19.5%" height="844" alt="프로필" src="https://github.com/user-attachments/assets/70111f4f-03f6-43cc-926e-adc759867d11" />
+<img width="19.5%" height="844" alt="처음화면" src="https://github.com/user-attachments/assets/6fda5089-f32f-4861-87a0-15d09a7d9b97" />
+<img width="19.5%" height="844" alt="상점" src="https://github.com/user-attachments/assets/9896606b-4451-41d1-bc6d-dacf3d2ed0e7" />
+<img width="19.5%" height="844" alt="급식 보기" src="https://github.com/user-attachments/assets/30d8ed82-9271-4e0c-bbe3-c3d025f5e794" />
+<img width="19.5%" height="844" alt="메인 화면" src="https://github.com/user-attachments/assets/0b021af3-67af-4774-96ee-35a0b86cd115" />
